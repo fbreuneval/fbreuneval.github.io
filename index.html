@@ -1,111 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+id: home
+title: "Sécheresses : ne pas être pris par surprise"
+description: "Une carte pour anticiper les sécheresses et les pénuries d'eau à venir sur la France, conçue sur la base des données climatiques. Découvrez le site et les ressources qui vous permettront d'investiguer à votre tour."
+image: /assets/img/capture-printemps-2050.png
+header:
+   content: |
+    <blockquote class="meta">
+      <p>À partir de 2050, les sécheresses « exceptionnelles » devraient se produire désormais <strong>une année sur deux</strong> — au lieu de une année sur <em>trente</em>. Il y aura de moins en moins d'eau tout au long du XXIème siècle et certains territoires sont plus vulnérables que d'autres.</p>
 
-<head>
+      <p>Ce site est réalisé par un <a style="color: white;" class="lien" href="/qui-sommes-nous">collectif de citoyen·nes engagé·es</a> à destination de celles et ceux qui préfèrent savoir à quel point nous allons manquer d'eau pour être libres d'agir.</p>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Anticiper les pénuries d'eau potable">
-  <meta name="author" content="Site d'information citoyenne permettant d'anticiper l'impact du changement climatique et des sécheresses sur l'accès à l'eau potable en France métropolitaine et en Outre mer. Nous identifions les zones à risques et mettons à disposition des ressources accessibles pour des publics non-scientifiques.">
-
-  <title>Pénuries d'eau potable</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
-
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="assets/css/fontawesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-  <!-- Custom styles for this template -->
-  <link href="assets/css/map.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar  navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Pénuries d'eau potable</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link" >Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a href="temoignages-penurie-eau-potable.html" class="nav-link" >Témoignages</a>
-          </li>
-          <li class="btn-group nav-item">
-            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              Ressources<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="zone-risque-relief-calcaire.html">Zone à risque : Les régions à relief calcaire</a></li>
-              <li><a href="zone-risque-roches-granit.html">Zone à risque : Les régions à roches granitiques</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="tutoriel-anticiper-changement-climatique.html">Anticiper le changement climatique</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="references.html">Références scientifiques</a></li>
-
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="a-vous-la-parole.html" class="nav-link" >A vous la parole !</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="qui-sommes-nous.html">Qui sommes-nous ? </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url('assets/img/lac.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 col-md-10 mx-auto">
-          <div style="padding-bottom: 35px; padding-top: 130px; " class="site-heading">
-            <h1>Pénuries d'eau potable</h1>
-            <!--<span class="subheading">A quels endroits de France allons nous manquer d'eau? </span>-->
-            <hr class="my-4">
-            <span><i class="fa fa-quote-left quote" aria-hidden="true"></i></span>
-
-            <span class="meta">Ces dernières années les canicules ont provoqué des pénuries d'eau potable pour plusieurs dizaines de milliers d'habitants de France métropolitaine. À partir de 2040 les situations qui étaient exceptionnelles deviendront la situation normale pour toute une partie du territoire français. Nous sommes un collectif citoyens et avons passé du temps avec des habitants, agriculteurs et maires qui ont vécu des pénuries d'eau potable et sont sur des zones qui manquent régulièrement d'eau <a style="color: white;" class="lien" href="temoignages-penurie-eau-potable.html" ><strong>(consultez leurs témoignages)</strong></a>. Le danger pour la population survient lorsque les conflits territoriaux mènent à des situations d'appropriation de l'eau au détriment des autres. C'est à nous/vous de faire le nécessaire pour que l'eau, qui sera un or bleu sur certains territoires, soit un bien commun.</span>
-            </br>
-            </br>
-            <p class="arrowdown">
-				<a title="Poursuivre la lecture" href="#start">
-					<i class="fa-arrow-down"></i>
-					</a>
-				</p>
-
-          </div><!-- fin site heading-->
-        </div><!-- fin col-->
-      </div><!-- fin row-->
-    </div><!-- fin container -->
-  </header>
-
-  <!-- Main Content -->
-  <div class="container">
+      <p>Les informations présentées sont assemblées sur la base de <a style="color: white;" class="lien" href="/temoignages">témoignages de pénuries d'eau en France métropolitaine</a> et <a style="color: white;" class="lien" href="/anticiper-le-changement-climatique">d'informations vérifiées sur les prévisions climatiques</a> et leur impact sur les sécheresses.<br></p>
+    </blockquote>
+    <p class="arrowdown">
+      <a title="Poursuivre la lecture" href="#start">
+        <i class="fas fa-2x fa-arrow-circle-down"></i>
+      </a>
+    </p>
+css: |
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+  <link href="assets/css/map.css" rel="stylesheet"/>
+  <style>
+    .arrowdown a i {
+      color: white;
+    }
+  </style>
+js: |
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <script src="assets/js/sswi.js"></script>
+  <script src="assets/js/map.js"></script>
+---
 
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <h2 id="start" style="font-size: 32px;">Y a t-il un risque de pénurie d'eau potable sur mon territoire?</h2>
-      </div>
+        <h2 id="start" style="font-size: 32px;">À quel point va t-on manquer d'eau ?</h2>
+          </br>
+        </div>
     </div>
 
    <!-- CONFIG CARTE -->
@@ -113,15 +43,16 @@
     <div class="row">
       <!-- HORIZON TEMPOREL-->
       <div class="col-lg-6 col-md-6">
+        <label>Une année classique en&nbsp;:</label>
         <ul id="horizon" class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-horizon="H1">2030 / 2040</a>
+            <a class="nav-link active" style="font-size: 20px;" id="carte2030-tab" data-horizon="H1">2030-2040</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-horizon="H2">2050 / 2060</a>
+            <a class="nav-link" style="font-size: 20px;" id="carte2050-tab" data-horizon="H2">2050-2060</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-horizon="H3">2080 / 2090</a>
+            <a class="nav-link" style="font-size: 20px;" id="carte2080-tab" data-horizon="H3">2080-2090</a>
           </li>
         </ul>
       </div>
@@ -129,12 +60,12 @@
      
       <!-- SAISONS-->
       <div class="d-flex align-items-center col-lg-6 col-md-6" style="padding-top: 8px;" id="saison-conteneur">
-        <label>Saison&nbsp;:</label>
-        <select class="custom-select" id="saisons" >
-          <option selected value="spring">Printemps</option>
-          <option value="summer">Eté</option>
-          <option value="autumn">Automne</option>
-          <option value="winter">Hiver</option>
+        <label>Sélectionnez une saison <i class="fas fa-exclamation-triangle"></i> :</label>
+        <select class="custom-select" style="font-size: 20px;" id="saisons" >
+          <option selected value="spring">printemps</option>
+          <option value="summer">été</option>
+          <option value="autumn">automne</option>
+          <option value="winter">hiver</option>
         </select>
       </div>
     </div>
@@ -151,23 +82,29 @@
 
       <!-- LEGENDE -->
       <div id="carte-legende"><!-- Rempli par js/map.js --></div>
-    </div>
+      </div>
 
     <div class="row" id="info-buttons">
       <div class="col-lg-6 col-md-6">
         <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-          "Zoom" sur les données scientifiques
+          « Zoom » sur les données scientifiques
         </button>
       </div>
       <div class="col-lg-6 col-md-6">
-        <a href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg ">
+        <a href="/temoignages" class="btn btn-dark btn-lg ">
           Témoignages de pénuries d'eau potable en France
         </a>
       </div>
     </div>
+      <div>
 
-    <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
-
+          </br>
+      
+    <p><i class="fa fa-quote-left quote" aria-hidden="true"></i><em>Depuis plusieurs années déjà en France des communes subissent de graves sécheresses, <a class="lien" href="/temoignages">sont approvisionnées en camions citernes</a>, et se confrontent à la réalité d'un monde à sec... Un collectif vient de se créer pour alerter sur la question, partager les connaissances, et agir en amont pour ne pas être pris au dépourvu quand il sera trop tard...</em> - dans <a class="lien" href="https://www.lemonde.fr/blog/alternatives/2019/10/13/penuries-deau-en-france-un-collectif-citoyen-sorganise-pour-ne-pas-etre-pris-par-surprise/?fbclid=IwAR3UjXesE_KgXpLBNl3BEiH-Pvj1gTdy8EkE2zTqkf6-h1GmY9T-cQtkAjk">Le Monde, 12 octobre</a>. Ça vous intéresse d'aller plus loin? <a class="lien" href="https://www.meetup.com/fr-FR/secheresses-exploration-citoyenne/">Inscrivez vous aux rencontres 100% gratuites et citoyennes dans les grandes villes ou sur le terrain.</a></p>          
+      </br>
+    
+    </div>
+    
     <div class="row">
       <div class="col-lg-12 col-md-12 mx-auto">
         <!--<a class="lien" href="img/indice de sécheresse météo-france.pdf"
@@ -184,16 +121,15 @@
               <div class="modal-body">
 
 
-
-                <p>Nous avons indiqué en rouge et orange les régions où le changement climatique amplifiera les risques de manquer d'eau. Nous avons utilisé pour cela les données du projet Climsec produites par météoFrance.
+                <p>Nous avons indiqué en rouge et en orange les territoires impactés par le manque d’eau. Nous avons utilisé pour cela les données du laboratoire CLIMSEC (partenariat Météo-France, CERFACS et IPSL.) qui permettent de visualiser les sécheresses à venir. Nous les remercions. 
                 <ul>
               </ul>
-                <p><a class="btn btn-warning" href="tutoriel-anticiper-changement-climatique.html">Anticiper le changement climatique</a></p>
+                <p><a class="btn btn-warning" href="/anticiper-le-changement-climatique">Toutes les données scientifiques</a></p>
 
- <p> Nous avons indiqué en noir les zones où les risques seront fortement amplifiés <strong>et</strong> où les roches souterraines ne permettent pas de stocker efficacement l'eau potable. Voici des schémas des phénomènes et les liens vers les données utilisées :
+                <p>Nous avons indiqué en noir les territoires touchés par des sécheresses prolongées intenses<strong>et</strong> où le sous-sol conserve mal l'eau en quantité suffisante et ceci grâce aux données fournies par les acteurs de l’eau. Voici des schémas des phénomènes et les données :
 
-                                <p><a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Régions à relief calcaire (Jura, Alpes, Pyrennées,...)</a></p>
-                                <p><a href="zone-risque-roches-granit.html" class="btn btn-dark">Régions à roches granitiques (Bretagne,...)</a></p>
+                                <p><a href="/zones-calcaires" class="btn btn-dark">Régions à relief calcaire - apparaîssent déjà en noir sur la carte</a></p>
+                                <p><a href="/zones-socle" class="btn btn-dark">Régions à roches socle - n'apparaîssent pas encore en noir sur la carte</a></p>
 
 
 
@@ -225,24 +161,24 @@
 
 
 
-</br>
+<div class="row" style="background-color: #FCC11A" id="question">
+   	<div class="col-lg-12 col-md-12 mx-auto">
 
-      <div class="row" style="background-color: #FCC11A">
-        <div class="col-lg-12 col-md-12 mx-auto">
-
-          </br>
-    <h2 style="color:black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;">Quelles sont les zones à risques ? </h2></br>
+		</br>
+		<h2 style="color:black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;" alt="">Y a t-il un risque de pénurie en eau potable en France métropolitaine ?</h2>
+		<p>
+        <p>Ils sont déjà des <a class="lien" href="/temoignages">dizaines de milliers d'habitants à les subir en France métropolitaine</a>. Le point commun entre toutes ces villes et villages déjà impactés: ils ont tous subi des <strong>sécheresses prolongées</strong> et <strong>leur le sous-sol conserve mal l'eau en quantité suffisante</strong>. Une partie des communes localisées sur des régions à relief calcaire et au dessus de roches socle sont concernées et leur nombre va s'étendre: <strong>plusieurs centaines de milliers de citoyens/futurs citoyens seront concernés une partie de l'année</strong>. Mais avant de déménager sur un coup de tête, prenez tout de même le temps de lire ce qu'est <a class="lien" href="/legende#penuries">un risque de pénurie en eau</a>. Dans beaucoup de cas c'est n'est pas irrémédiable.</p>
+        <p><strong>Les territoires les plus vulnérables:</strong></p>
 
         </div>
       </div>
-
           <div class="row" style="background-color: #FCC11A">
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100" style="background-color: #ffffff">
       <div class="card-body">
-        <h5 class="card-title"><img style="max-width: 70px; padding-right: 15px;" src="assets/img/calcaire.png" alt="">Régions à relief calcaire (Jura, Alpes, Pyrennées,...) </h5></br>
-        <a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Suis-je dans cette zone ? </a>
-        <p class="card-text" style="font-size: smaller;">Des pénuries ont déjà eu lieu dans ce type de région. En 2017, 10% des communes du Haut-Doubs ont eu le robinet coupé plusieurs heures par jour et durant 3 mois !</p>
+        <h5 class="card-title"><img style="max-width: 70px; padding-right: 15px;" src="assets/img/calcaire.png" alt="">Régions à relief calcaire (Alpes, Jura, Languedoc, etc.) </h5></br>
+        <a href="/zones-calcaires" class="btn btn-dark">Suis-je dans cette zone ? </a>
+        <p class="card-text" style="font-size: smaller;"><strong>Apparaîssent déjà en noir sur la carte </strong>. Des pénuries ont eu lieu dans ces zones. En 2018 par exemple, 10% des communes du Doubs (un des départements les plus pluvieux de France) ont traversé des pénuries d'eau potable sur plusieurs mois. Elles sont localisées sur des reliefs calcaires.</p>
       </div>
     </div>
   </div>
@@ -250,10 +186,9 @@
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100"  style="background-color: #ffffff">
       <div class="card-body">
-        <h5 class="card-title"><img style="max-width: 90px; padding-right: 15px;" src="assets/img/granit.png" alt="">Régions à roches granitiques (Bretagne,...)</h5></br>
-        <a href="" class="btn btn-dark">Prendre part à notre investigation</a>
-
-        <p class="card-text" style="font-size: smaller;">La Bretagne souffre déjà de pollution de l'eau, et risque de souffrir de pénurie d'eau potable. Explorez avec nous les conséquences du changement climatique dans ces régions.</p>
+        <h5 class="card-title"><img style="max-width: 90px; padding-right: 15px;" src="assets/img/granit.png" alt="">Régions à roches socle (Bretagne, Creuse, Cantal, Corse...)</h5></br>
+        <a href="/zones-socle" class="btn btn-dark">Suis-je dans cette zone ?</a>
+        <p class="card-text" style="font-size: smaller;"><strong>N'apparaîssent pas encore sur la carte (sans quoi le territoire en noir serait <strong>beaucoup</strong> plus conséquent)</strong>. Une grande partie du territoire français est composée par ce type de sous-sol. Beaucoup de communes qui subissent actuellement des pénuries d'eau potable (Creuse, Loire...) y sont localisées.</p>
       </div>
     </div>
 
@@ -264,7 +199,7 @@
           </div>
 
 
-    <div class="row" style="background-color:#FCC11A;">
+    <div class="row" style="background-color:#FCC11A;" id="ideesrecues">
 
       <div class="col-lg-12 col-md-12 mx-auto">
         </br>
@@ -279,8 +214,12 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title"> "En France, on ne manque pas d'eau!"</h4>
-            <p class="card-text">Et vous ne manquez pas d’air ;-) Le département du Haut-Doubs a subit une pénurie d’eau potable durant l'été et l'automne dernier. Les robinets de 10 % des communes étaient à sec pendant plusieurs heures de la journée, et le ravitaillement se faisait par camions-citernes. <a class="lien" href="temoignages-penurie-eau-potable.html">Retrouvez ici quelques exemples de pénuries récentes.</a> En métropole et dans les outre-mer, les restrictions d’usage de l’eau potable sont très fréquentes. Vous pouvez les consulter en temps réel sur le site <a class="lien" href="http://propluvia.developpement-durable.gouv.fr/propluvia/faces/index.jsp" >Propluvia.</a></p>
+            <h4 class="card-title">« En France, on ne manque pas d'eau. »</h4>
+              <p class="card-text">
+              <p><details>
+                  <summary>Et vous ne manquez pas d’air ! Ce n'est pas l'avis des « quelques » dizaines de milliers de citoyens qui ont traversé plusieurs mois de rupture d’alimentation <em>(cliquez ici pour lire la suite)</em></summary>en eau potable en métropole ces dernières années. Ou des centaines de milliers d’agriculteurs et sylviculteurs, qui n’ont plus eu le droit d’utiliser d’eau. </p>
+                  <p>Retrouvez <a class="lien" href="/temoignages">ici quelques exemples de pénuries récentes</a>. Pour les sécheresses il suffit d’allumer la TV, d’écouter la radio ou de sortir. Vous pouvez aussi consulter les restrictions de l’eau en temps réel sur le site <a class="lien" href="http://propluvia.developpement-durable.gouv.fr/propluvia/faces/index.jsp" >Propluvia</a>.</p>
+              </details>
           </div>
         </div>
       </div>
@@ -288,8 +227,11 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title">"Les risques sont seulement liés à la pollution."</h4>
-            <p class="card-text">La pollution de l’eau est un problème important dans certaines régions comme en Bretagne, et peut conduire à des pénuries d'eau potable. Cependant, la hausse des températures et l'espacement des précipitations peut aussi conduire à un manque d'eau. Les pénuries de 2018 dans le Haut-Doubs ou celle de Valenciennes en 2019 étaient liées à un manque d'eau et non à une pollution. <a class="lien" href="temoignages-penurie-eau-potable.html">Consultez les témoignages.</a></p>
+            <h4 class="card-title">« C’est dans les territoires du sud que le changement climatique va avoir le plus d’impact. »</h4>
+            <p class="card-text">
+              <p><details>
+                  <summary>Non, ce ne sont pas les territoires déjà les plus habitués aux sécheresses qui vont être le plus impactés par le manque d’eau. Les territoires les plus verts de France <em>(cliquez ici pour lire la suite)</em></summary> compteront  parmis les plus impactés par les sécheresses à venir car ils sont parmis les moins habituées à des manques d'eau réguliers <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">(source : rapport final du projet Climsec, voir p.10)</a>: leurs forêts et leurs rivières seront transformées. Le monde de la sylviculture doit notamment être informé par l'ampleur de ces changements à venir qu'il a déjà constaté...</p
+                  </details>
           </div>
         </div>
       </div>
@@ -297,23 +239,13 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title">"1 ou 2 degrés de plus en moyenne, çe ne va pas changer grand-chose !"</h4>
-            <p class="card-text">Cela a de nombreuses conséquences :
-            <ul>
-              <li>Les périodes sans pluie s'allongent, ce qui augmente le risque qu'une source se tarisse.</li>
-              <li>L'évaporation de l'eau potable est plus intense.</li>
-              <li>Les besoins en eau de la végétation augmentent.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="card-title"> "Quelques journées où il pleut beaucoup suffisent."</h4>
-            <p class="card-text">Oui si le sous-sol permet naturellement de conserver l’eau de pluie sur place. Sinon, l’eau  s’écoule vers des altitudes plus basses. C'est ce qui s'est passé dans le Haut-Doubs. Ce risque existe aussi dans d'autres régions, notamment là où il y a <a class="lien" href="zone-risque-relief-calcaire.html">du relief et des roches calcaires. Ce risque existe t-il près de chez vous ?</a></p>
+            <h4 class="card-title">« Il y a déjà eu de grandes sécheresses dans le passé. »</h4>
+              <p>Oui, et donc ?</p>
+              <p><details>
+                  <summary>Ce qui arrivait une fois tous les trente ans se produira à partir de 2050-2060 une année sur deux. Vous avez sûrement remarqué que <em>(cliquez ici pour lire la suite)</em></summary> les sécheresses exceptionnelles étaient de plus en plus régulières ?</p>
+              <p>Tout ce qui est nouveau nous semble exceptionnel. Jusqu’à ce que cela devienne régulier. Puis que ça nous semble normal.</p>
+              <p>Nous attirons votre attention que la carte représente la sécheresse classique des sols. Elle vous permet de vous faire une idée de comment ce sera. La carte ne permet pas de visualiser les sécheresses exeptionnelles qui surviendront.</p>
+              </details>
           </div>
         </div>
       </div>
@@ -322,8 +254,28 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title"> "Les pénuries sont de toute façon très localisées."</h4>
-            <p class="card-text">Nous n'en sommes pas au point d'un risque généralisé de pénurie... et heureusement ! Mais même si vous n’avez pas de problème d’accès à l’eau potable, vos communes ou régions voisines peuvent en avoir. Vous serez les mieux placés pour leur apporter de l’aide. </p>
+            <h4 class="card-title">« Les pénuries sont de toute façon très localisées. »</h4>
+            <p class="card-text">
+                  <p><details>
+                      <summary>Si vous parlez de risques pénuries d’eau potable (l’eau du robinet) plusieurs semaines/mois par an ceci concernera sûrement plusieurs <em>(cliquez ici pour lire la suite)</em></summary> centaines de milliers d'habitants à partir de la deuxième moitié du XXIème siècle. Dans la majeure partie des cas  il nous semble possible de réagir de manière ingénieuse - notamment par la solidarité, l'adaptation et dans certaines zones très localisées par des procédés techniques. Dans d'autres cas plus rares - comme les communes isolées qui dépendent d'une unique réserve d'eau vulnérable - les pénuries semblent difficilement évitables une partie de l'année. </p>
+                  </details>
+                  </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">« Quelques journées où il pleut beaucoup suffisent. »</h4>
+            <p class="card-text">
+              <details>
+                      <p><summary>Non, cela ne va pas obligatoirement recharger les nappes phréatiques (eaux souterraines). Par exemple <em>(cliquez ici pour lire la suite)</em></summary></p>
+              <ul>
+                  <li>S’il n’a pas plu depuis longtemps les plantes ont soif et vont boire une partie de l’eau (un frêne boit 300L/jour en situation normale, 500L/jour s'il manque d'eau).</li>
+                  <li>Le sol et l’air, s’ils sont chauds, vont accélérer l'évaporation de l'eau qui retourne dans l'air.</li>
+                  <li>Avec l’augmentation des températures, il faut ajouter que les pluies vont devenir de plus en plus intenses (environ 40 % max d’infiltration dans le sol). Autrement dit elles ne seront plus aussi régulières (environ 80 % d’infiltration dans le sol) et une partie de l'eau va ruisseler après être tombée.</li>
+              </ul>
+                </details>
           </div>
         </div>
       </div>
@@ -331,11 +283,23 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title"> "Les zones à risque sont les régions où la végétation est sèche."</h4>
-            <p class="card-text">Prenez le Limousin ou le Jura. Ces régions très vertes ont régulièrement des réserves d’eau potable très faibles par rapport à leurs besoins. Avec le changement climatique, ce sont même les régions les plus humides (nord et nord-est) qui connaîtront les évolutions les plus importantes <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">(source : rapport final du projet Climsec, voir p.10)</a>.</p>
+            <h4 class="card-title">« 2 ou 3 degrés de plus en moyenne, ça ne va pas changer grand-chose. »</h4>
+            <p class="card-text">
+              <p><details>
+                  <summary>Parmis les impacts des manques d'eau auxquels toute une partie des écosystèmes (forêts, rivières...) n’est pas habituée <em>(cliquez ici pour lire la suite)</em></summary> et parfois auxquels elle n'est pas en mesure de s’adapter.</p>
+                  <ul>
+                <li>De moins en moins d’eaux souterraines. Leur "recharge" va être impactée. En espérant que ce ne soient pas nos usages.</li>
+                <li>Tout ce qui consomme beaucoup d’eau va être contraint de s’adapter.</li>
+                <li>Et avec tout cela être accompagné de nombreuses réactions humaines en chaîne.</li>
+              </ul>
+                </details>
           </div>
         </div>
       </div>
+
+
+
+    </div>
 
 
 
@@ -345,67 +309,9 @@
 
     <div class="row">
       <div class="col-lg-8 col-md-8 mx-auto">
-        </br>
-        <a  href="tutoriel-anticiper-changement-climatique.html" class="btn btn-warning  btn-lg btn-block">Anticipez le changement climatique</a>
+        <br>
+        <a  href="/anticiper-le-changement-climatique" class="btn btn-warning  btn-lg btn-block">Anticiper le changement climatique</a>
+        <br>
       </div>
 
     </div>
-    </br>
-  </div>
-
-
-
-
-
-  <!-- Footer
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/sswi.js"></script>
-  <script src="assets/js/map.js"></script>
-  </div>
-</body>
-
-</html>
